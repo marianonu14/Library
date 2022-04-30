@@ -16,33 +16,32 @@
         <button class="btn" id="btn">+ New Book</button>
     </nav>
     <main class="main-container"></main>
-    <section class="modal">
+    <section class="modal" id="modal">
         <div class="modal-container">
+            <div class="container-close">
+                <button class="btn btn-modal-close" id="btnclose">X</button>
+            </div>
             <h2 class="modal-tittle">Add a New Book</h2>
             <form class="modal-form">
                 <div class="modal-input">
                   <label for="tittle">Tittle:</label>
                   <input type="text" name="tittle" id="tittle" required>
                 </div>
-              
                 <div class="modal-input">
                   <label for="author">Author:</label>
                   <input type="text" name="author" id="author" required>
                 </div>
-              
                 <div class="modal-input">
                   <label for="age">Pages:</label>
                   <input type="number" name="pages" id="pages" required>
                 </div>
-
-                <div class="modal-input">
+                <div class="modal-input modal-checkbox">
                     <label for="read">Read</label>
                     <input type="checkbox" id="read" name="read" value="read">
-                  </div>
-              
+                </div>
                 <button class="btn btn-modal" type="submit">Add +</button>
               </form>
-        </div>
+        </div> 
     </section>
     <script src="app.js"></script>
 </body>
