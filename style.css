@@ -28,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 10rem;
-    font-size: 7rem;
+    font-size: 5vmax;
     color: var(--color-secundario);
 }
 
@@ -42,11 +42,11 @@ body {
 }
 
 .btn {
-    min-width: 130px;
+    width: 25vmin;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
-    font-size: 1.7rem;
+    font-size: 1.3vmax;
     font-weight: bold;
     font-family: var(--fuente-principal);
     cursor: pointer;
@@ -83,4 +83,96 @@ body {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1rem;
+  }
+
+  .modal{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--color-primario);
+    border: 0.4rem solid white;
+    border-radius: 0.6rem;
+    max-height: 60%;
+    min-width: 35%;
+    margin: auto;
+    padding: 20rem 0;
+  }
+
+  .modal-tittle {
+    padding: 0;
+    margin: 0;
+    color: var(--color-terciario);
+    font-size: 2vmax;
+  }
+
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+  }
+
+  .modal-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-height: 3.5rem;
+  }
+
+  .modal-input:last-of-type{
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .modal-input [type=text],[type=number] {
+    font-family: var(--fuente-principal);
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-cuaternario);
+    padding: 1.3rem;
+    height: 3rem;
+    width: 80%;
+  }
+
+  .modal-input [type=checkbox] {
+    width: 10%;
+  }
+
+  .modal-form label {
+    color: var(--color-secundario);
+    font-weight: bold;
+    font-size: 1.4vmax;
+  }
+
+  .modal-form input {
+    border: 0.4rem solid white;
+    border-radius: 0.6rem;
+    height: 2.5rem;
+    max-width: 70%;
+  }
+
+  .modal-form input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .btn-modal{
+    margin: 1.5rem 0;
+    width: 60%;
   }
