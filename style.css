@@ -43,7 +43,7 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(25rem, 1fr) );
+  grid-template-columns: repeat( auto-fill, minmax(25rem, 1fr));
   gap: 2rem;
   width: 80%;
   margin: auto;
@@ -55,7 +55,9 @@ body {
   color: var(--color-primario);
   border-radius: 0.5rem;
   border: 0.4rem solid var(--color-cuaternario);
-  padding: 2rem;
+  padding: 1.5rem;
+  margin: auto;
+  max-width: 35rem;
 }
 
 .card-body{
@@ -66,8 +68,9 @@ body {
 
 .card-element{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
 }
 
 .card-element h3{
