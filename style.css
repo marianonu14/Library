@@ -43,10 +43,56 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  grid-template-columns: minmax(repeat(4, 1fr) , auto);
+  gap: 1.5rem;
+  width: 80%;
+  margin: auto;
+  padding: 2.5rem 0;
 }
 
+.card{
+  background-color: var(--color-terciario);
+  color: var(--color-primario);
+  border-radius: 0.5rem;
+  border: 0.4rem solid var(--color-cuaternario);
+  padding: 2rem;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-element{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-element h3{
+  margin: 0;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-box [type=checkbox] {
+  height: 1.8rem;
+  width: 1.8rem;
+  cursor: pointer;
+}
+
+.container-delete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
 .modal{
   display: flex;
   position: fixed;
@@ -203,10 +249,13 @@ width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   max-height: 2.5rem;
   max-width: 2.5rem ;
+  font-size: 1.4rem;
+  font-weight: bold;
   border-radius: 50%;
-  border: 2px solid var(--color-cuaternario);
+  border: 2.8px solid var(--color-cuaternario);
   color: var(--color-cuaternario);
 }
 
@@ -215,6 +264,15 @@ width: 60%;
 }
 
 .btn-modal-close:after{
+  background: var(--color-cuaternario);
+}
+
+.btn-delete {
+  border: 2px solid var(--color-cuaternario);
+  color: var(--color-cuaternario);
+}
+
+.btn-delete:after{
   background: var(--color-cuaternario);
 }
 
