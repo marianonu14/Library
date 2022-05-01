@@ -2,7 +2,6 @@ const btn = document.querySelector('#btn');
 const btnClose = document.querySelector('#btnclose');
 const container = document.querySelector('#container');
 const modal = document.querySelector('#modal');
-
 let myLibrary = [];
 
 btn.addEventListener('click', (e) => {
